@@ -2,13 +2,13 @@ import Logo from "@/assets/images/Logo.png";
 import LogoText from "@/assets/images/LogoText.png";
 import { cn } from "@/utils";
 import { Link } from "react-router-dom";
-import MenuIcon from "@/assets/svgs/menu.svg?react";
-import { useState } from "react";
+// import MenuIcon from "@/assets/svgs/menu.svg?react";
+// import { useState } from "react";
 
 function Nav() {
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
+  // const [isMenuVisible, setIsMenuVisible] = useState(false);
 
-  const handlePressMenu = () => setIsMenuVisible(!isMenuVisible);
+  // const handlePressMenu = () => setIsMenuVisible(!isMenuVisible);
 
   return (
     <div
@@ -29,7 +29,7 @@ function Nav() {
           <img src={LogoText} alt="LogoText" className="size-full" />
         </figure>
       </Link>
-      <div
+      {/* <div
         className={cn(
           "flex flex-col bg-white justify-between",
           "max-sm:absolute max-sm:top-0 max-sm:-right-2/5 max-sm:h-[calc(100vh-80px)] max-sm:w-2/5 max-sm:mt-20 max-sm:shadow-xl max-sm:pl-8 max-sm:pt-14 max-sm:pb-20 max-sm:transition-[right] max-sm:duration-300",
@@ -42,7 +42,7 @@ function Nav() {
             "max-sm:items-start max-sm:gap-7 max-sm:flex-col"
           )}
         >
-          {/* {Object.values(navLinks).map((link, i) => (
+          {Object.values(navLinks).map((link, i) => (
             <Link
               key={i}
               to={link.title.link}
@@ -55,21 +55,21 @@ function Nav() {
             >
               {link.title.title}
             </Link>
-          ))} */}
+          ))}
         </div>
-        {/* <CustomButton
+        <CustomButton
           label="사전예약하기"
           style={cn(
             "border-[#C89EE1] bg-[#C89EE1] opacity-70 text-white hidden",
             "max-sm:block"
           )}
           onClick={handlePressMoveToPreReg}
-        /> */}
+        />
       </div>
       <MenuIcon
         className="size-8 hidden cursor-pointer max-sm:block"
         onClick={handlePressMenu}
-      />
+      /> */}
     </div>
   );
 }
