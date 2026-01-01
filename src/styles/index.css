@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    appearance: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "PretendardVariable";
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    /* 한글 가독성 향상 */
+    letter-spacing: -0.3px;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+@media print {
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  box-shadow: 0 0 0px 1000px white inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:autofill,
+input:autofill:hover,
+input:autofill:focus,
+input:autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  box-shadow: 0 0 0px 1000px white inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: #d4d4d8;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100px;
+  background-color: white;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
