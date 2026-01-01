@@ -142,9 +142,18 @@ function HomePage() {
       });
 
       // 이제 status가 200으로 들어오며 json() 파싱이 가능해집니다.
-      const result: { result: string; message: string } = await response.json();
+      const result: { result: string; message?: string; error: string } =
+        await response.json();
       // console.log(result);
-      setModalConfig({ isOpen: true, message: result.message });
+
+      setModalConfig({
+        isOpen: true,
+        message:
+          result.message ??
+          result.error === "ReferenceError: data is not defined"
+            ? "사전예약이 성공적으로 완료 되었습니다."
+            : result.error,
+      });
     } catch (error) {
       console.log("error: " + error);
     }
