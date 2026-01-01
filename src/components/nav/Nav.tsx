@@ -1,14 +1,11 @@
 import Logo from "@/assets/images/Logo.png";
 import LogoText from "@/assets/images/LogoText.png";
 import { cn } from "@/utils";
-import { Link, useLocation } from "react-router-dom";
-import { navLinks } from "@/constants/navLinks";
+import { Link } from "react-router-dom";
 import MenuIcon from "@/assets/svgs/menu.svg?react";
 import { useState } from "react";
 
 function Nav() {
-  const location = useLocation();
-
   const [isMenuVisible, setIsMenuVisible] = useState(false);
 
   const handlePressMenu = () => setIsMenuVisible(!isMenuVisible);
@@ -45,7 +42,7 @@ function Nav() {
             "max-sm:items-start max-sm:gap-7 max-sm:flex-col"
           )}
         >
-          {Object.values(navLinks).map((link, i) => (
+          {/* {Object.values(navLinks).map((link, i) => (
             <Link
               key={i}
               to={link.title.link}
@@ -58,7 +55,7 @@ function Nav() {
             >
               {link.title.title}
             </Link>
-          ))}
+          ))} */}
         </div>
         {/* <CustomButton
           label="사전예약하기"

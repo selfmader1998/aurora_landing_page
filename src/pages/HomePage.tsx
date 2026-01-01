@@ -4,15 +4,15 @@ import type { userDataType } from "@/types";
 import { useScrollObserver } from "@/hooks/useObserver";
 import Card from "@/components/card/Card";
 import UserForm from "@/components/form/UserForm";
-import probImg1 from "@/assets/images/prob1)자만추.png";
-import probImg2 from "@/assets/images/prob2)범죄 위험.png";
-import probImg3 from "@/assets/images/prob3)감정낭비.png";
-import probImg4 from "@/assets/images/prob4)여유없음.png";
+import probImg1 from "@/assets/images/prob1.png";
+import probImg2 from "@/assets/images/prob2.png";
+import probImg3 from "@/assets/images/prob3.png";
+import probImg4 from "@/assets/images/prob4.png";
 
-import solImg1 from "@/assets/images/sol1)낭만적인 기다림.png";
-import solImg2 from "@/assets/images/sol2)안전한 만남.png";
-import solImg3 from "@/assets/images/sol4)사주궁합 소개팅.png";
-import solImg4 from "@/assets/images/sol3)사주 궁합으로 안정적인 연애.png";
+import solImg1 from "@/assets/images/sol1.png";
+import solImg2 from "@/assets/images/sol2.png";
+import solImg3 from "@/assets/images/sol4.png";
+import solImg4 from "@/assets/images/sol3.png";
 import AlertModal from "@/components/modal/AlertModal";
 
 function HomePage() {
